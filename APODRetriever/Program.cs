@@ -12,7 +12,7 @@ namespace APODRetriever
     {
         static void Main(string[] args)
         {
-            Console.Write("Retrieving and storing today's APOD...");
+            Console.Write(String.Format("Retrieving and storing APOD for {0}, {1}...", DateTime.Today.DayOfWeek, DateTime.Today.Date.ToString("MMMM dd yyyy")));
             PushToApodDB(DateTime.Now.Date.ToString("yyyy-MM-dd"));
         }
 
